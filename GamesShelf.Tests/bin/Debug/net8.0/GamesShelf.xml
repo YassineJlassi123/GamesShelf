@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GamesShelf</name>
+    </assembly>
+    <members>
+        <member name="M:GamesController.CreateGame(Game)">
+            <summary>
+            Creates a new game.
+            </summary>
+            <param name="game">The game to create.</param>
+            <returns>The created game.</returns>
+        </member>
+        <member name="M:GamesController.GetAllGames">
+            <summary>
+            Retrieves all games.
+            </summary>
+            <returns>A list of games.</returns>
+        </member>
+        <member name="M:GamesController.GetGameById(System.Int32)">
+            <summary>
+            Retrieves a game by its unique identifier.
+            </summary>
+            <param name="id">The unique identifier of the game.</param>
+            <returns>The game with the specified identifier.</returns>
+        </member>
+        <member name="M:GamesController.UpdateGame(System.Int32,Game)">
+            <summary>
+            Updates an existing game.
+            </summary>
+            <param name="id">The unique identifier of the game to update.</param>
+            <param name="game">The updated game data.</param>
+            <returns>The updated game.</returns>
+        </member>
+        <member name="M:GamesController.DeleteGame(System.Int32)">
+            <summary>
+            Deletes a game by its unique identifier.
+            </summary>
+            <param name="id">The unique identifier of the game to delete.</param>
+            <returns>Result of the delete operation.</returns>
+        </member>
+        <member name="M:GamesController.GetTopByPlaytime(System.String,System.String)">
+            <summary>
+            Retrieves the most played games with optional genre and platform filters.
+            </summary>
+            <param name="genre">Optional genre to filter by.</param>
+            <param name="platform">Optional platform to filter by.</param>
+            <returns>A list of games with the highest total playtime.</returns>
+        </member>
+        <member name="M:GamesController.GetTopByPlayers(System.String,System.String)">
+            <summary>
+            Retrieves the games with the highest number of unique players, with optional genre and platform filters.
+            </summary>
+            <param name="genre">Optional genre to filter by.</param>
+            <param name="platform">Optional platform to filter by.</param>
+            <returns>A list of games with the highest number of unique players.</returns>
+        </member>
+        <member name="T:GamesShelf.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:GamesShelf.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:GamesShelf.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:GamesShelf.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
